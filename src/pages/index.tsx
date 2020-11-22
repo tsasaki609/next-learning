@@ -3,6 +3,7 @@ import Header from '../wigets/Header';
 import Footer from '../wigets/Footer';
 import SearchForm from '../components/SearchForm';
 import styles from '../styles/Home.module.css';
+import SearchResult from '../components/SearchResult';
 
 const searchFromUpdate = data => console.log(data);
 
@@ -11,6 +12,7 @@ const Home: FC = () => {
     <div className={styles.container}>
       <Header/>
       <SearchForm update={searchFromUpdate} />
+      <SearchResult />
 
       <main className={styles.main}>
         <h1 className={styles.title}>
