@@ -1,18 +1,14 @@
 import React, { FC } from 'react';
 import Header from '../wigets/Header';
 import Footer from '../wigets/Footer';
-import SearchForm from '../components/SearchForm';
 import styles from '../styles/Home.module.css';
-import SearchResult from '../components/SearchResult';
-
-const searchFromUpdate = data => console.log(data);
+import Search from '../components/Search'
 
 const Home: FC = () => {
   return (
     <div className={styles.container}>
       <Header/>
-      <SearchForm update={searchFromUpdate} />
-      <SearchResult />
+      <Search/>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
