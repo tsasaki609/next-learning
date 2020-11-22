@@ -4,11 +4,13 @@ import Footer from '../wigets/Footer';
 import SearchForm from '../components/SearchForm';
 import styles from '../styles/Home.module.css';
 
+const searchFromUpdate = data => console.log(data);
+
 const Home: FC = () => {
   return (
     <div className={styles.container}>
       <Header/>
-      <SearchForm/>
+      <SearchForm update={searchFromUpdate} />
 
       <main className={styles.main}>
         <h1 className={styles.title}>

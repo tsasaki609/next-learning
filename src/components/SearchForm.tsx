@@ -6,9 +6,13 @@ type Inputs = {
   exampleRequired: string;
 };
 
-const SearchForm: FC = () => {
+type Props = {
+    update: (data: Inputs) => void
+};
+
+const SearchForm: FC<Props> = (props) => {
   const { register, handleSubmit, watch, errors } = useForm<Inputs>();
-  const onSubmit = data => console.log(data);
+  const onSubmit = (data: Inputs) => props.update(data);
 
   console.log(watch("example"));
 
