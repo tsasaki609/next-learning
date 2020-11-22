@@ -1,12 +1,14 @@
 import React, { FC } from 'react';
 import Header from '../wigets/Header';
 import Footer from '../wigets/Footer';
+import SearchForm from '../components/SearchForm';
 import styles from '../styles/Home.module.css';
 
 const Home: FC = () => {
   return (
     <div className={styles.container}>
       <Header/>
+      <SearchForm/>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
