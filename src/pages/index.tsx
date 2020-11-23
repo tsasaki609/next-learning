@@ -2,13 +2,13 @@ import React, { FC } from 'react';
 import Header from '../wigets/Header';
 import Footer from '../wigets/Footer';
 import styles from '../styles/Home.module.css';
-import Search from '../components/Search'
+import Search from '../components/Search';
 
 const Home: FC = () => {
   return (
     <div className={styles.container}>
-      <Header/>
-      <Search/>
+      <Header />
+      <Search />
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -51,9 +51,9 @@ const Home: FC = () => {
         </div>
       </main>
 
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default Home;
