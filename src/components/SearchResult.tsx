@@ -14,7 +14,7 @@ const columns = [
 ]
 
 type Props = {
-
+    data: []
 }
 
 const SearchResult: FC<Props> = (props) => {
